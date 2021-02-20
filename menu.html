@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles1.css">
+    </head>
+    <body>
+      <h2 style="text-align:center;color:white;">Menu!!</h2>
+      <div class="doc"><br><br>
+        <img src="menu.webp">
+      </div>
+      <script>
+        document.getElementById("doc").onscroll = function() {myFunction()};
+        function myFunction() {
+        var winScroll = document.getElementById("doc").scrollTop || document.getElementById("doc").scrollTop;
+        var height = document.getElementById("doc").scrollHeight - document.getElementById("doc").clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+        }
+      </script>
+
+    </body>
+  </html>
